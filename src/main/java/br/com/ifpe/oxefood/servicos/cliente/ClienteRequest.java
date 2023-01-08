@@ -1,6 +1,5 @@
 package br.com.ifpe.oxefood.servicos.cliente;
 
-import java.time.LocalDate;
 import java.util.Arrays;
 
 import javax.validation.constraints.Email;
@@ -8,9 +7,6 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
-import org.hibernate.validator.constraints.br.CPF;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 import br.com.ifpe.oxefood.modelo.acesso.Usuario;
 import br.com.ifpe.oxefood.modelo.cliente.Cliente;
@@ -33,6 +29,11 @@ public class ClienteRequest {
 	@NotBlank(message = "O Nome é de preenchimento obrigatório")
 	@Length(max = 100, message = "O Nome deverá ter no máximo {max} caracteres")
 	private String nome;
+	
+	@NotNull(message = "O Sobrenome é de preenchimento obrigatório")
+	@NotBlank(message = "O Sobrenome é de preenchimento obrigatório")
+	@Length(max = 100, message = "O Sobrenome deverá ter no máximo {max} caracteres")
+	private String sobrenome;
 
 	@NotBlank(message = "O e-mail é de preenchimento obrigatório")
 	@Email
@@ -41,18 +42,8 @@ public class ClienteRequest {
 	@NotBlank(message = "A senha é de preenchimento obrigatório")
 	private String password;
 
-	@NotNull(message = "O CPF é de preenchimento obrigatório")
-	@NotBlank(message = "O CPF é de preenchimento obrigatório")
-	@CPF
-	private String cpf;
-
 	@Length(min = 8, max = 20, message = "O campo Fone tem que ter entre {min} e {max} caracteres")
 	private String fone;
-
-	private String foneAlternativo;
-
-	@JsonFormat(pattern = "dd/MM/yyyy")
-	private LocalDate dataNacimento;
 
 	public Cliente buildCliente() {
 
@@ -60,9 +51,8 @@ public class ClienteRequest {
 			.chaveEmpresa(chaveEmpresa)
 			.usuario(buildUsuario())
 			.nome(nome)
-			.cpf(cpf)
+			.sobrenome(sobrenome)
 			.fone(fone)
-			.foneAlternativo(foneAlternativo)
 			.build();
 	    }
 
