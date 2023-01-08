@@ -38,22 +38,33 @@ public class Empresa extends EntidadeAuditavel {
 	@Column
 	private String site;
 
-	@Column
+	@Column(nullable = false)
 	private String cnpj;
 
-	@Column
+	@Column(nullable = false)
 	private String inscricaoEstadual;
 
-	@Column
+	@Column(nullable = false)
 	private String nomeEmpresarial;
 
-	@Column
+	@Column(nullable = false)
 	private String nomeFantasia;
 
-	@Column
+	@Column(nullable = false)
 	private String fone;
 
 	@Column
 	private String foneAlternativo;
+
+	public void updateFrom(Empresa param) {
+		this.setChave(param.getChave());
+		this.setSite(param.getSite());
+		this.setCnpj(param.getCnpj());
+		this.setInscricaoEstadual(param.getInscricaoEstadual());
+		this.setNomeEmpresarial(param.getNomeEmpresarial());
+		this.setNomeFantasia(param.getNomeFantasia());
+		this.setFone(param.getFone());
+		this.setFoneAlternativo(param.getFoneAlternativo());
+	}
 
 }
