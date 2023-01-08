@@ -18,27 +18,27 @@ public class EnderecoRequest {
 	@NotNull(message = "O Cepe é de preenchimento obrigatório")
 	@NotBlank(message = "O Cepe é de preenchimento obrigatório")
 	private String cepe;
-	
+
 	@NotNull(message = "O Logradouro é de preenchimento obrigatório")
 	@NotBlank(message = "O Logradouro é de preenchimento obrigatório")
 	private String logradouro;
-	
+
 	@NotNull(message = "O Número é de preenchimento obrigatório")
 	@NotBlank(message = "O Número é de preenchimento obrigatório")
 	private String numero;
-	
+
 	@NotNull(message = "O Bairro é de preenchimento obrigatório")
 	@NotBlank(message = "O Bairro é de preenchimento obrigatório")
 	private String bairro;
-	
+
 	@NotNull(message = "A Cidade é de preenchimento obrigatória")
 	@NotBlank(message = "A Cidade é de preenchimento obrigatória")
 	private String cidade;
-	
+
 	@NotNull(message = "O UF é de preenchimento obrigatório")
 	@NotBlank(message = "O UF é de preenchimento obrigatório")
 	private String uf;
-	
+
 	private String complemento;
 
 	public Endereco buildEndereco() {

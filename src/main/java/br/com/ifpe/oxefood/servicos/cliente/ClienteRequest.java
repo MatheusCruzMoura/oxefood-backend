@@ -29,7 +29,7 @@ public class ClienteRequest {
 	@NotBlank(message = "O Nome é de preenchimento obrigatório")
 	@Length(max = 100, message = "O Nome deverá ter no máximo {max} caracteres")
 	private String nome;
-	
+
 	@NotNull(message = "O Sobrenome é de preenchimento obrigatório")
 	@NotBlank(message = "O Sobrenome é de preenchimento obrigatório")
 	@Length(max = 100, message = "O Sobrenome deverá ter no máximo {max} caracteres")

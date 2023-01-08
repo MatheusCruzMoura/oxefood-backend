@@ -7296,3 +7296,336 @@ java.lang.StackOverflowError: null
 2023-01-08 18:39:09.549  INFO 181344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
 2023-01-08 18:39:09.616  INFO 181344 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : Started OxefoodApplication in 6.483 seconds (JVM running for 5803.25)
 2023-01-08 18:39:09.618  INFO 181344 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-01-08 18:48:11.639  INFO 181344 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : Starting OxefoodApplication using Java 11.0.17 on ubuntu-matheus with PID 181344 (/home/matheus/git/oxefood-backend/target/classes started by matheus in /home/matheus/git/oxefood-backend)
+2023-01-08 18:48:11.639  INFO 181344 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-08 18:48:11.775  INFO 181344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-08 18:48:11.787  INFO 181344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 8 JPA repository interfaces.
+2023-01-08 18:48:11.864  INFO 181344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-01-08 18:48:11.864  INFO 181344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-08 18:48:11.865  INFO 181344 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-01-08 18:48:11.869  INFO 181344 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-08 18:48:11.869  INFO 181344 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 229 ms
+2023-01-08 18:48:11.880  INFO 181344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2023-01-08 18:48:14.433  INFO 181344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2023-01-08 18:48:14.434  INFO 181344 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://containers-us-west-48.railway.app:6151/railway'
+2023-01-08 18:48:14.456  INFO 181344 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-08 18:48:14.458  INFO 181344 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-01-08 18:48:14.466  WARN 181344 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: Endereco
+2023-01-08 18:48:14.466  INFO 181344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2023-01-08 18:48:14.669  INFO 181344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2023-01-08 18:48:19.208  INFO 194509 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : Starting OxefoodApplication using Java 11.0.17 on ubuntu-matheus with PID 194509 (/home/matheus/git/oxefood-backend/target/classes started by matheus in /home/matheus/git/oxefood-backend)
+2023-01-08 18:48:19.209  INFO 194509 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-08 18:48:19.243  INFO 194509 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-08 18:48:19.244  INFO 194509 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-08 18:48:19.804  INFO 194509 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-08 18:48:19.850  INFO 194509 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 8 JPA repository interfaces.
+2023-01-08 18:48:20.368  INFO 194509 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-01-08 18:48:20.374  INFO 194509 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-08 18:48:20.375  INFO 194509 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-01-08 18:48:20.412  INFO 194509 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-08 18:48:20.412  INFO 194509 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1168 ms
+2023-01-08 18:48:20.443  INFO 194509 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-08 18:48:23.171  INFO 194509 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-08 18:48:23.179  INFO 194509 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://containers-us-west-48.railway.app:6151/railway'
+2023-01-08 18:48:23.281  INFO 194509 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-08 18:48:23.310  INFO 194509 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-01-08 18:48:23.396  INFO 194509 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-08 18:48:23.451  INFO 194509 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-01-08 18:48:23.532  WARN 194509 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: Endereco
+2023-01-08 18:48:23.533  INFO 194509 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-08 18:48:25.520  INFO 194509 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-08 18:48:25.522  INFO 194509 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-08 18:48:25.541  INFO 194509 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-01-08 18:48:25.557 ERROR 194509 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: Endereco
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.4.jar:2.7.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.4.jar:2.7.4]
+	at br.com.ifpe.oxefood.OxefoodApplication.main(OxefoodApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.4.jar:2.7.4]
+Caused by: java.lang.NoClassDefFoundError: Endereco
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309) ~[na:na]
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredMethodProperties(JavaXClass.java:97) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:116) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:108) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:252) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494) ~[hibernate-core-5.6.11.Final.jar:5.6.11.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Endereco
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:398) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.7.4.jar:2.7.4]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522) ~[na:na]
+	... 42 common frames omitted
+
+2023-01-08 18:53:36.812  INFO 194915 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : Starting OxefoodApplication using Java 11.0.17 on ubuntu-matheus with PID 194915 (/home/matheus/git/oxefood-backend/target/classes started by matheus in /home/matheus/git/oxefood-backend)
+2023-01-08 18:53:36.814  INFO 194915 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-08 18:53:36.844  INFO 194915 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-08 18:53:36.844  INFO 194915 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-08 18:53:37.456  INFO 194915 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-08 18:53:37.499  INFO 194915 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 7 JPA repository interfaces.
+2023-01-08 18:53:38.029  INFO 194915 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-01-08 18:53:38.035  INFO 194915 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-08 18:53:38.035  INFO 194915 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-01-08 18:53:38.075  INFO 194915 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-08 18:53:38.075  INFO 194915 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1230 ms
+2023-01-08 18:53:38.105  INFO 194915 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-08 18:53:40.738  INFO 194915 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-08 18:53:40.759  INFO 194915 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://containers-us-west-48.railway.app:6151/railway'
+2023-01-08 18:53:40.901  INFO 194915 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-08 18:53:40.930  INFO 194915 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-01-08 18:53:41.028  INFO 194915 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-08 18:53:41.086  INFO 194915 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-01-08 18:53:44.967  INFO 194915 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-08 18:53:44.982  INFO 194915 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-08 18:53:46.116 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/swagger-resources/**']
+2023-01-08 18:53:46.129 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/swagger-ui.html']
+2023-01-08 18:53:46.130 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/swagger*/**']
+2023-01-08 18:53:46.130 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/v2/api-docs']
+2023-01-08 18:53:46.130 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/webjars/**']
+2023-01-08 18:53:46.130 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/routes/**']
+2023-01-08 18:53:46.130 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/favicon.ico']
+2023-01-08 18:53:46.130 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/ws/**']
+2023-01-08 18:53:46.130 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/delifacil/**/dadosPedidoNew/**']
+2023-01-08 18:53:46.130 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/delifacil/image/**']
+2023-01-08 18:53:46.130 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/cliente', POST]
+2023-01-08 18:53:46.130 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/empresa', POST]
+2023-01-08 18:53:46.130 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/login/signin', POST]
+2023-01-08 18:53:46.130 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto', POST]
+2023-01-08 18:53:46.131 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto/*', PUT]
+2023-01-08 18:53:46.132 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN')] for Ant [pattern='/api/categoriaproduto/*', DELETE]
+2023-01-08 18:53:46.132 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto/', GET]
+2023-01-08 18:53:46.132 DEBUG 194915 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')] for any request
+2023-01-08 18:53:46.140  INFO 194915 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c97fd1e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39768c22, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b8d5156, org.springframework.security.web.header.HeaderWriterFilter@2f157308, org.springframework.web.filter.CorsFilter@1bb03835, org.springframework.security.web.authentication.logout.LogoutFilter@62d51e7d, br.com.ifpe.oxefood.security.jwt.JwtTokenAuthenticationFilter@1fadb018, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f38699c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e9e8ecc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c91c1fe, org.springframework.security.web.session.SessionManagementFilter@43926eff, org.springframework.security.web.access.ExceptionTranslationFilter@e5894c1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@deadc45]
+2023-01-08 18:53:46.219  INFO 194915 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-08 18:53:46.322  WARN 194915 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-08 18:53:46.584  INFO 194915 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2023-01-08 18:53:46.812  INFO 194915 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : Started OxefoodApplication in 10.243 seconds (JVM running for 10.58)
+2023-01-08 18:54:36.705  INFO 194915 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-08 18:54:36.705  INFO 194915 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-08 18:54:36.707  INFO 194915 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-01-08 18:54:36.713 DEBUG 194915 --- [http-nio-8085-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/login/signin
+2023-01-08 18:54:36.716 DEBUG 194915 --- [http-nio-8085-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:54:36.722 DEBUG 194915 --- [http-nio-8085-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-01-08 18:54:36.728 DEBUG 194915 --- [http-nio-8085-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [POST /api/login/signin] with attributes [permitAll]
+2023-01-08 18:54:36.728 DEBUG 194915 --- [http-nio-8085-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/login/signin
+2023-01-08 18:54:37.618 DEBUG 194915 --- [http-nio-8085-exec-1] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2023-01-08 18:54:38.276 DEBUG 194915 --- [http-nio-8085-exec-1] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:54:54.125 DEBUG 194915 --- [http-nio-8085-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/endereco/2
+2023-01-08 18:54:54.125 DEBUG 194915 --- [http-nio-8085-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:54:54.753 DEBUG 194915 --- [http-nio-8085-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /api/endereco/2] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:54:54.753 DEBUG 194915 --- [http-nio-8085-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/endereco/2
+2023-01-08 18:54:55.189 DEBUG 194915 --- [http-nio-8085-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:55:02.149 DEBUG 194915 --- [http-nio-8085-exec-4] o.s.security.web.FilterChainProxy        : Securing PUT /api/endereco/2
+2023-01-08 18:55:02.149 DEBUG 194915 --- [http-nio-8085-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:55:02.760 DEBUG 194915 --- [http-nio-8085-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [PUT /api/endereco/2] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:55:02.760 DEBUG 194915 --- [http-nio-8085-exec-4] o.s.security.web.FilterChainProxy        : Secured PUT /api/endereco/2
+2023-01-08 18:55:03.413 DEBUG 194915 --- [http-nio-8085-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:55:07.452 DEBUG 194915 --- [http-nio-8085-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/endereco/2
+2023-01-08 18:55:07.452 DEBUG 194915 --- [http-nio-8085-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:55:08.063 DEBUG 194915 --- [http-nio-8085-exec-5] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /api/endereco/2] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:55:08.063 DEBUG 194915 --- [http-nio-8085-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/endereco/2
+2023-01-08 18:55:08.472 DEBUG 194915 --- [http-nio-8085-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:55:14.842 DEBUG 194915 --- [http-nio-8085-exec-6] o.s.security.web.FilterChainProxy        : Securing DELETE /api/endereco/2
+2023-01-08 18:55:14.842 DEBUG 194915 --- [http-nio-8085-exec-6] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:55:15.454 DEBUG 194915 --- [http-nio-8085-exec-6] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [DELETE /api/endereco/2] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:55:15.454 DEBUG 194915 --- [http-nio-8085-exec-6] o.s.security.web.FilterChainProxy        : Secured DELETE /api/endereco/2
+2023-01-08 18:55:16.069 DEBUG 194915 --- [http-nio-8085-exec-6] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:55:20.976 DEBUG 194915 --- [http-nio-8085-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/endereco/2
+2023-01-08 18:55:20.976 DEBUG 194915 --- [http-nio-8085-exec-7] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:55:21.592 DEBUG 194915 --- [http-nio-8085-exec-7] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /api/endereco/2] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:55:21.592 DEBUG 194915 --- [http-nio-8085-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/endereco/2
+2023-01-08 18:55:22.008 DEBUG 194915 --- [http-nio-8085-exec-7] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:58:41.352  INFO 194915 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-01-08 18:58:41.356  INFO 194915 --- [RMI TCP Connection(13)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-08 18:58:41.358  INFO 194915 --- [RMI TCP Connection(13)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-01-08 18:58:41.368  INFO 194915 --- [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-08 18:58:41.370  INFO 194915 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-08 18:58:43.412  INFO 194915 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-08 18:58:44.501  INFO 203205 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : Starting OxefoodApplication using Java 11.0.17 on ubuntu-matheus with PID 203205 (/home/matheus/git/oxefood-backend/target/classes started by matheus in /home/matheus/git/oxefood-backend)
+2023-01-08 18:58:44.502  INFO 203205 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-08 18:58:44.533  INFO 203205 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-08 18:58:44.533  INFO 203205 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-08 18:58:45.051  INFO 203205 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-08 18:58:45.087  INFO 203205 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 7 JPA repository interfaces.
+2023-01-08 18:58:45.503  INFO 203205 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2023-01-08 18:58:45.510  INFO 203205 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-08 18:58:45.510  INFO 203205 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-01-08 18:58:45.547  INFO 203205 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-08 18:58:45.547  INFO 203205 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1014 ms
+2023-01-08 18:58:45.575  INFO 203205 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-08 18:58:48.198  INFO 203205 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-08 18:58:48.206  INFO 203205 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://containers-us-west-48.railway.app:6151/railway'
+2023-01-08 18:58:48.300  INFO 203205 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-08 18:58:48.324  INFO 203205 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-01-08 18:58:48.397  INFO 203205 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-08 18:58:48.446  INFO 203205 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-01-08 18:58:52.204  INFO 203205 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-08 18:58:52.209  INFO 203205 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-08 18:58:53.161 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/swagger-resources/**']
+2023-01-08 18:58:53.171 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/swagger-ui.html']
+2023-01-08 18:58:53.171 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/swagger*/**']
+2023-01-08 18:58:53.171 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/v2/api-docs']
+2023-01-08 18:58:53.171 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/webjars/**']
+2023-01-08 18:58:53.171 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/routes/**']
+2023-01-08 18:58:53.171 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/favicon.ico']
+2023-01-08 18:58:53.172 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/ws/**']
+2023-01-08 18:58:53.172 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/delifacil/**/dadosPedidoNew/**']
+2023-01-08 18:58:53.172 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/delifacil/image/**']
+2023-01-08 18:58:53.172 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/cliente', POST]
+2023-01-08 18:58:53.172 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/empresa', POST]
+2023-01-08 18:58:53.172 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/login/signin', POST]
+2023-01-08 18:58:53.172 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto', POST]
+2023-01-08 18:58:53.173 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto/*', PUT]
+2023-01-08 18:58:53.173 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN')] for Ant [pattern='/api/categoriaproduto/*', DELETE]
+2023-01-08 18:58:53.173 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto/', GET]
+2023-01-08 18:58:53.173 DEBUG 203205 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')] for any request
+2023-01-08 18:58:53.181  INFO 203205 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39768c22, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bb03835, org.springframework.security.web.context.SecurityContextPersistenceFilter@613ec7e9, org.springframework.security.web.header.HeaderWriterFilter@2f1b931b, org.springframework.web.filter.CorsFilter@1fadb018, org.springframework.security.web.authentication.logout.LogoutFilter@3bf3486a, br.com.ifpe.oxefood.security.jwt.JwtTokenAuthenticationFilter@5c91c1fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e9e8ecc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39081579, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@510b41d2, org.springframework.security.web.session.SessionManagementFilter@b7036ce, org.springframework.security.web.access.ExceptionTranslationFilter@3ff51212, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1dac9e2b]
+2023-01-08 18:58:53.259  INFO 203205 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-08 18:58:53.372  WARN 203205 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-08 18:58:53.628  INFO 203205 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2023-01-08 18:58:53.825  INFO 203205 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : Started OxefoodApplication in 9.547 seconds (JVM running for 9.985)
+2023-01-08 18:59:00.208  INFO 203205 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-08 18:59:00.208  INFO 203205 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-08 18:59:00.210  INFO 203205 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-01-08 18:59:00.215 DEBUG 203205 --- [http-nio-8085-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/login/signin
+2023-01-08 18:59:00.218 DEBUG 203205 --- [http-nio-8085-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:59:00.224 DEBUG 203205 --- [http-nio-8085-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-01-08 18:59:00.228 DEBUG 203205 --- [http-nio-8085-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [POST /api/login/signin] with attributes [permitAll]
+2023-01-08 18:59:00.229 DEBUG 203205 --- [http-nio-8085-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/login/signin
+2023-01-08 18:59:01.098 DEBUG 203205 --- [http-nio-8085-exec-2] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2023-01-08 18:59:01.743 DEBUG 203205 --- [http-nio-8085-exec-2] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:59:14.284 DEBUG 203205 --- [http-nio-8085-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/endereco/2
+2023-01-08 18:59:14.284 DEBUG 203205 --- [http-nio-8085-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:59:14.917 DEBUG 203205 --- [http-nio-8085-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /api/endereco/2] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:59:14.918 DEBUG 203205 --- [http-nio-8085-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/endereco/2
+2023-01-08 18:59:15.344 DEBUG 203205 --- [http-nio-8085-exec-3] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:59:23.571 DEBUG 203205 --- [http-nio-8085-exec-4] o.s.security.web.FilterChainProxy        : Securing PUT /api/endereco/2
+2023-01-08 18:59:23.572 DEBUG 203205 --- [http-nio-8085-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:59:24.183 DEBUG 203205 --- [http-nio-8085-exec-4] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [PUT /api/endereco/2] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:59:24.183 DEBUG 203205 --- [http-nio-8085-exec-4] o.s.security.web.FilterChainProxy        : Secured PUT /api/endereco/2
+2023-01-08 18:59:24.825 DEBUG 203205 --- [http-nio-8085-exec-4] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:59:27.376 DEBUG 203205 --- [http-nio-8085-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/endereco/2
+2023-01-08 18:59:27.377 DEBUG 203205 --- [http-nio-8085-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:59:27.994 DEBUG 203205 --- [http-nio-8085-exec-5] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /api/endereco/2] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:59:27.994 DEBUG 203205 --- [http-nio-8085-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/endereco/2
+2023-01-08 18:59:28.409 DEBUG 203205 --- [http-nio-8085-exec-5] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:59:31.663 DEBUG 203205 --- [http-nio-8085-exec-6] o.s.security.web.FilterChainProxy        : Securing DELETE /api/cliente/6
+2023-01-08 18:59:31.664 DEBUG 203205 --- [http-nio-8085-exec-6] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:59:31.665 DEBUG 203205 --- [http-nio-8085-exec-6] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:59:31.669 ERROR 203205 --- [http-nio-8085-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+br.com.ifpe.oxefood.security.jwt.InvalidJwtAuthenticationException: Expired or invalid JWT token
+	at br.com.ifpe.oxefood.security.jwt.JwtTokenProvider.validateToken(JwtTokenProvider.java:112) ~[classes/:na]
+	at br.com.ifpe.oxefood.security.jwt.JwtTokenAuthenticationFilter.doFilterInternal(JwtTokenAuthenticationFilter.java:29) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186) ~[spring-security-web-5.7.3.jar:5.7.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2023-01-08 18:59:31.671 DEBUG 203205 --- [http-nio-8085-exec-6] o.s.security.web.FilterChainProxy        : Securing DELETE /error
+2023-01-08 18:59:31.671 DEBUG 203205 --- [http-nio-8085-exec-6] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:59:31.671 DEBUG 203205 --- [http-nio-8085-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-01-08 18:59:31.671 DEBUG 203205 --- [http-nio-8085-exec-6] o.s.s.w.a.i.FilterSecurityInterceptor    : Failed to authorize filter invocation [DELETE /error] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:59:31.671 DEBUG 203205 --- [http-nio-8085-exec-6] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:59:35.119 DEBUG 203205 --- [http-nio-8085-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/endereco/2
+2023-01-08 18:59:35.119 DEBUG 203205 --- [http-nio-8085-exec-7] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:59:35.728 DEBUG 203205 --- [http-nio-8085-exec-7] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /api/endereco/2] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:59:35.729 DEBUG 203205 --- [http-nio-8085-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/endereco/2
+2023-01-08 18:59:36.138 DEBUG 203205 --- [http-nio-8085-exec-7] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:59:38.569 DEBUG 203205 --- [http-nio-8085-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/endereco/2
+2023-01-08 18:59:38.569 DEBUG 203205 --- [http-nio-8085-exec-8] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:59:39.184 DEBUG 203205 --- [http-nio-8085-exec-8] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /api/endereco/2] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:59:39.184 DEBUG 203205 --- [http-nio-8085-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/endereco/2
+2023-01-08 18:59:39.593 DEBUG 203205 --- [http-nio-8085-exec-8] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:59:53.017 DEBUG 203205 --- [http-nio-8085-exec-9] o.s.security.web.FilterChainProxy        : Securing DELETE /api/endereco/2
+2023-01-08 18:59:53.018 DEBUG 203205 --- [http-nio-8085-exec-9] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:59:53.639 DEBUG 203205 --- [http-nio-8085-exec-9] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [DELETE /api/endereco/2] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:59:53.639 DEBUG 203205 --- [http-nio-8085-exec-9] o.s.security.web.FilterChainProxy        : Secured DELETE /api/endereco/2
+2023-01-08 18:59:54.254 DEBUG 203205 --- [http-nio-8085-exec-9] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
+2023-01-08 18:59:56.134 DEBUG 203205 --- [http-nio-8085-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/endereco/2
+2023-01-08 18:59:56.135 DEBUG 203205 --- [http-nio-8085-exec-10] s.s.w.c.SecurityContextPersistenceFilter : Set SecurityContextHolder to empty SecurityContext
+2023-01-08 18:59:56.746 DEBUG 203205 --- [http-nio-8085-exec-10] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [GET /api/endereco/2] with attributes [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')]
+2023-01-08 18:59:56.746 DEBUG 203205 --- [http-nio-8085-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/endereco/2
+2023-01-08 18:59:57.156 DEBUG 203205 --- [http-nio-8085-exec-10] s.s.w.c.SecurityContextPersistenceFilter : Cleared SecurityContextHolder to complete request
