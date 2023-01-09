@@ -1,6 +1,5 @@
 package br.com.ifpe.oxefood.modelo.cliente;
 
-import java.util.List;
 import java.util.Optional;
 
 import javax.transaction.Transactional;
@@ -48,9 +47,9 @@ public class ClienteService extends GenericService {
 	}
 
 	@Transactional
-	public List<Cliente> consultarPorChaveEmpresa(String chaveEmpresa) {
+	public Cliente consultarPorUsuarioId(Long usuarioId) {
 
-		return repository.findByChaveEmpresaOrderByNomeAsc(chaveEmpresa);
+		return repository.findByUsuarioIdOrderByNomeAsc(usuarioId);
 	}
 
 	@Transactional

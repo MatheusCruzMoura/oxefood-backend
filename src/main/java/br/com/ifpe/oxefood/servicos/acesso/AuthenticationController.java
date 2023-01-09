@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.ifpe.oxefood.modelo.acesso.Usuario;
 import br.com.ifpe.oxefood.modelo.acesso.UsuarioService;
+import br.com.ifpe.oxefood.modelo.cliente.Cliente;
+import br.com.ifpe.oxefood.modelo.cliente.ClienteService;
 import br.com.ifpe.oxefood.security.jwt.JwtTokenProvider;
 import br.com.ifpe.oxefood.util.entity.GenericController;
 
@@ -26,6 +28,9 @@ public class AuthenticationController extends GenericController {
 
 	@Autowired
 	private UsuarioService usuarioService;
+
+	@Autowired
+	private ClienteService clienteService;
 
 	@Autowired
 	private AuthenticationManager authenticationManager;
@@ -57,8 +62,11 @@ public class AuthenticationController extends GenericController {
 
 		String refreshToken = jwtTokenProvider.createRefreshToken(usuario.getUsername());
 
+		Cliente cliente = clienteService.consultarPorUsuarioId(usuario.getId());
+
 		Map<Object, Object> model = new HashMap<>();
 		model.put("username", usuario.getUsername());
+		model.put("userid", cliente.getId());
 		model.put("token", token);
 		model.put("refresh", refreshToken);
 
