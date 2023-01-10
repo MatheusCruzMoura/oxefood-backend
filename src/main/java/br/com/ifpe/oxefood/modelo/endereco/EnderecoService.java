@@ -34,7 +34,7 @@ public class EnderecoService extends GenericService {
 	public void delete(Long id) {
 
 		Endereco endereco = this.obterEnderecoPorID(id);
-		endereco.setCepe(null);
+		endereco.setCep(null);
 		endereco.setLogradouro(null);
 		endereco.setNumero(null);
 		endereco.setBairro(null);

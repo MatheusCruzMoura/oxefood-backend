@@ -33,7 +33,7 @@ public class Endereco extends EntidadeAuditavel {
 	private Usuario usuario;
 
 	@Column
-	private String cepe;
+	private String cep;
 
 	@Column
 	private String logradouro;
@@ -55,7 +55,7 @@ public class Endereco extends EntidadeAuditavel {
 
 	public void updateFrom(Endereco param) {
 
-		this.setCepe(param.getCepe());
+		this.setCep(param.getCep());
 		this.setLogradouro(param.getLogradouro());
 		this.setNumero(param.getNumero());
 		this.setBairro(param.getBairro());

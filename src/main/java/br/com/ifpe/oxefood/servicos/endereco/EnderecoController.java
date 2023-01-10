@@ -16,7 +16,7 @@ import br.com.ifpe.oxefood.util.entity.GenericController;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping("/api/endereco")
+@RequestMapping("/api/cliente/endereco")
 public class EnderecoController extends GenericController {
 
 	@Autowired

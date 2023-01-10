@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 public interface EnderecoRepository extends JpaRepository<Endereco, Long>, JpaSpecificationExecutor<Endereco> {
 
-	List<Endereco> findByCepeOrderByCepeAsc(String Cepe);
+	List<Endereco> findByCepOrderByCepAsc(String Cep);
 
 }
