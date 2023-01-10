@@ -28,9 +28,6 @@ public class Cliente extends EntidadeAuditavel {
 
 	private static final long serialVersionUID = -6085010525880815346L;
 
-	@Column(nullable = false)
-	private String chaveEmpresa;
-
 	@ManyToOne
 	@JoinColumn(nullable = false)
 	private Usuario usuario;
@@ -43,12 +40,15 @@ public class Cliente extends EntidadeAuditavel {
 
 	@Column(nullable = false)
 	private String fone;
+	
+	@Column
+	private String perfilUrl;
 
 	public void updateFrom(Cliente param) {
 
-		this.setChaveEmpresa(param.getChaveEmpresa());
 		this.setNome(param.getNome());
 		this.setSobrenome(param.getSobrenome());
 		this.setFone(param.getFone());
+		this.setPerfilUrl(param.getPerfilUrl());
 	}
 }
