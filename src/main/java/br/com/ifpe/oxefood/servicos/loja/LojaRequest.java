@@ -14,17 +14,18 @@ public class LojaRequest {
 	
 	private String nome;
 	
+	private String categoria;
+	
 	private String imagem;
 	
-	private long id_categoria;
-	
-	private double valor_frete;
+	private double valorFrete;
 	
 	public Loja buildLoja() {
 		Loja loja = Loja.builder()
 				.nome(nome)
+				.categoria(categoria)
 				.imagem(imagem)
-				.valor_frete(valor_frete)
+				.valorFrete(valorFrete)
 				.build();
 		return loja;
 	}

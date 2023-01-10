@@ -19,13 +19,13 @@ import br.com.ifpe.oxefood.util.entity.GenericController;
 public class LojaController extends GenericController {
 	@Autowired
 	private LojaService lojaService;
-	
+
 	@PostMapping
 	public ResponseEntity<Loja> save(@RequestBody @Valid LojaRequest request) {
 
 		Loja loja = request.buildLoja();
-		
+
 		Loja lojaCriada = lojaService.save(loja);
 		return new ResponseEntity<>(lojaCriada, HttpStatus.CREATED);
-}
+	}
 }

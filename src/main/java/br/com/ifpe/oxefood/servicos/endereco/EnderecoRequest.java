@@ -15,9 +15,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class EnderecoRequest {
 
-	@NotNull(message = "O Cepe é de preenchimento obrigatório")
-	@NotBlank(message = "O Cepe é de preenchimento obrigatório")
-	private String cepe;
+	@NotNull(message = "O Cep é de preenchimento obrigatório")
+	@NotBlank(message = "O Cep é de preenchimento obrigatório")
+	private String cep;
 
 	@NotNull(message = "O Logradouro é de preenchimento obrigatório")
 	@NotBlank(message = "O Logradouro é de preenchimento obrigatório")
@@ -44,7 +44,7 @@ public class EnderecoRequest {
 	public Endereco buildEndereco() {
 
 		return Endereco.builder()
-				.cepe(cepe)
+				.cep(cep)
 				.logradouro(logradouro)
 				.numero(numero)
 				.bairro(bairro)
