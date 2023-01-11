@@ -22,12 +22,12 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Loja extends EntidadeAuditavel {
-	
+
 	private static final long serialVersionUID = 2819481163306535449L;
 
 	@Column(nullable = false)
 	private String nome;
-	
+
 	@Column(nullable = false)
 	private String categoria;
 
@@ -36,7 +36,7 @@ public class Loja extends EntidadeAuditavel {
 
 	@Column(nullable = false)
 	private double valorFrete;
-	
+
 	public void updateFrom(Loja param) {
 
 		this.setNome(param.getNome());

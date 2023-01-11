@@ -40,7 +40,7 @@ public class ClienteRequest {
 
 	@Length(min = 8, max = 20, message = "O campo Fone tem que ter entre {min} e {max} caracteres")
 	private String fone;
-	
+
 	private String perfilUrl;
 
 	public Cliente buildCliente() {

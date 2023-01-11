@@ -40,7 +40,7 @@ public class Cliente extends EntidadeAuditavel {
 
 	@Column(nullable = false)
 	private String fone;
-	
+
 	@Column
 	private String perfilUrl;
 

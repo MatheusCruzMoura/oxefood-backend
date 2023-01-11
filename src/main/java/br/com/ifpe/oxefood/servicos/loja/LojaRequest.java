@@ -11,15 +11,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class LojaRequest {
-	
+
 	private String nome;
-	
+
 	private String categoria;
-	
+
 	private String imagem;
-	
+
 	private double valorFrete;
-	
+
 	public Loja buildLoja() {
 		Loja loja = Loja.builder()
 				.nome(nome)

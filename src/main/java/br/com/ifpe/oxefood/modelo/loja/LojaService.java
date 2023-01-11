@@ -11,7 +11,7 @@ import br.com.ifpe.oxefood.util.entity.GenericService;
 public class LojaService extends GenericService {
 	@Autowired
 	private LojaRepository repository;
-	
+
 	@Transactional
 	public Loja save(Loja loja) {
 
