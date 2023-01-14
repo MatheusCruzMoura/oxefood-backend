@@ -30,12 +30,16 @@ public class ItemRequest {
 	@NotBlank(message = "A descrição é de preenchimento obrigatório")
 	private String porcao;
 	
+	private String imagem;
+	
+	
 	public Item buildItem() {
 		return Item.builder()
 				.nome(nome)
 				.valor(valor)
 				.descricao(descricao)
 				.porcao(porcao)
+				.imagem(imagem)
 				.build();
 	}
 }

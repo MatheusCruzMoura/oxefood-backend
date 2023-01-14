@@ -40,7 +40,7 @@ public class Item extends EntidadeAuditavel {
 	@Column(nullable = false)
 	private String descricao;
 	
-	@Column(nullable = false)
+	@Column()
 	private String imagem;
 	
 	@Column(nullable = false)

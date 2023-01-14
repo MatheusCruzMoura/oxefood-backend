@@ -1264,3 +1264,93 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x16
 2023-01-14 16:47:38.616 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/login/signin', POST]
 2023-01-14 16:47:38.616 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto', POST]
 2023-01-14 16:47:38.616 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto/*', PUT]
+2023-01-14 16:47:38.616 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN')] for Ant [pattern='/api/categoriaproduto/*', DELETE]
+2023-01-14 16:47:38.617 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto/', GET]
+2023-01-14 16:47:38.617 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')] for any request
+2023-01-14 16:47:38.620  INFO 9636 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45fb1f61, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b9d8a6a, org.springframework.security.web.context.SecurityContextPersistenceFilter@fe49bf0, org.springframework.security.web.header.HeaderWriterFilter@2d063e25, org.springframework.web.filter.CorsFilter@113b728c, org.springframework.security.web.authentication.logout.LogoutFilter@437bc49f, br.com.ifpe.oxefood.security.jwt.JwtTokenAuthenticationFilter@1b5493e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f7f5f13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4314b5cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ca84e7e, org.springframework.security.web.session.SessionManagementFilter@3ed2b0d4, org.springframework.security.web.access.ExceptionTranslationFilter@2cff9681, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@da3b7b2]
+2023-01-14 16:47:38.655  INFO 9636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-14 16:47:38.701  WARN 9636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-14 16:47:38.830  INFO 9636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-01-14 16:47:38.961  INFO 9636 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : Started OxefoodApplication in 1.698 seconds (JVM running for 4794.472)
+2023-01-14 16:47:38.962  INFO 9636 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-01-14 16:54:51.143  INFO 9636 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2023-01-14 16:54:51.148  INFO 9636 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-14 16:54:51.155  INFO 9636 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-14 16:54:51.155  INFO 9636 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-01-14 16:54:51.157  INFO 9636 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-01-14 16:54:51.220  INFO 9636 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : Starting OxefoodApplication using Java 17.0.5 on DESKTOP-GAJDPSP with PID 9636 (C:\Users\fsa20\git\oxefood-backend\target\classes started by fsa20 in C:\Users\fsa20\git\oxefood-backend)
+2023-01-14 16:54:51.220  INFO 9636 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-14 16:54:51.465  INFO 9636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-14 16:54:51.492  INFO 9636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 9 JPA repository interfaces.
+2023-01-14 16:54:51.599  INFO 9636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-01-14 16:54:51.599  INFO 9636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-14 16:54:51.599  INFO 9636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-01-14 16:54:51.623  INFO 9636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-14 16:54:51.623  INFO 9636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 402 ms
+2023-01-14 16:54:51.642  INFO 9636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-01-14 16:54:51.657  INFO 9636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-01-14 16:54:51.657  INFO 9636 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5435/oxefood'
+2023-01-14 16:54:51.706  INFO 9636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-14 16:54:51.711  INFO 9636 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-01-14 16:54:51.884  INFO 9636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-14 16:54:51.885  INFO 9636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-14 16:54:52.553 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/swagger-resources/**']
+2023-01-14 16:54:52.553 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/swagger-ui.html']
+2023-01-14 16:54:52.553 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/swagger*/**']
+2023-01-14 16:54:52.553 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/v2/api-docs']
+2023-01-14 16:54:52.553 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/webjars/**']
+2023-01-14 16:54:52.553 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/routes/**']
+2023-01-14 16:54:52.553 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/favicon.ico']
+2023-01-14 16:54:52.553 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/ws/**']
+2023-01-14 16:54:52.553 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/delifacil/**/dadosPedidoNew/**']
+2023-01-14 16:54:52.553 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/delifacil/image/**']
+2023-01-14 16:54:52.553 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/cliente', POST]
+2023-01-14 16:54:52.553 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/empresa', POST]
+2023-01-14 16:54:52.554 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/login/signin', POST]
+2023-01-14 16:54:52.554 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto', POST]
+2023-01-14 16:54:52.554 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto/*', PUT]
+2023-01-14 16:54:52.554 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN')] for Ant [pattern='/api/categoriaproduto/*', DELETE]
+2023-01-14 16:54:52.554 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto/', GET]
+2023-01-14 16:54:52.554 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('CLIENTE','EMPRESA_ADMIN','EMPRESA_USER')] for any request
+2023-01-14 16:54:52.557  INFO 9636 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2bd1fef0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f3940d, org.springframework.security.web.context.SecurityContextPersistenceFilter@65ee896c, org.springframework.security.web.header.HeaderWriterFilter@666fd632, org.springframework.web.filter.CorsFilter@15a09a5e, org.springframework.security.web.authentication.logout.LogoutFilter@68267f1e, br.com.ifpe.oxefood.security.jwt.JwtTokenAuthenticationFilter@10dbf438, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a66795f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@220f267, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3459bead, org.springframework.security.web.session.SessionManagementFilter@50357f8d, org.springframework.security.web.access.ExceptionTranslationFilter@226bb395, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@616c9240]
+2023-01-14 16:54:52.592  INFO 9636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-14 16:54:52.628  WARN 9636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-14 16:54:52.789  INFO 9636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-01-14 16:54:52.935  INFO 9636 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : Started OxefoodApplication in 1.736 seconds (JVM running for 5228.446)
+2023-01-14 16:54:52.937  INFO 9636 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-01-14 16:54:54.226  INFO 9636 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2023-01-14 16:54:54.231  INFO 9636 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-14 16:54:54.236  INFO 9636 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-14 16:54:54.236  INFO 9636 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-01-14 16:54:54.238  INFO 9636 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-01-14 16:54:54.296  INFO 9636 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : Starting OxefoodApplication using Java 17.0.5 on DESKTOP-GAJDPSP with PID 9636 (C:\Users\fsa20\git\oxefood-backend\target\classes started by fsa20 in C:\Users\fsa20\git\oxefood-backend)
+2023-01-14 16:54:54.296  INFO 9636 --- [restartedMain] br.com.ifpe.oxefood.OxefoodApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-01-14 16:54:54.494  INFO 9636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-14 16:54:54.524  INFO 9636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 9 JPA repository interfaces.
+2023-01-14 16:54:54.619  INFO 9636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-01-14 16:54:54.619  INFO 9636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-14 16:54:54.619  INFO 9636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-01-14 16:54:54.634  INFO 9636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-14 16:54:54.634  INFO 9636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 337 ms
+2023-01-14 16:54:54.646  INFO 9636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-01-14 16:54:54.654  INFO 9636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-01-14 16:54:54.654  INFO 9636 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5435/oxefood'
+2023-01-14 16:54:54.682  INFO 9636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-14 16:54:54.686  INFO 9636 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-01-14 16:54:54.830  INFO 9636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-14 16:54:54.830  INFO 9636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-14 16:54:55.257 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/swagger-resources/**']
+2023-01-14 16:54:55.257 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/swagger-ui.html']
+2023-01-14 16:54:55.257 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/swagger*/**']
+2023-01-14 16:54:55.257 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/v2/api-docs']
+2023-01-14 16:54:55.258 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/webjars/**']
+2023-01-14 16:54:55.258 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/routes/**']
+2023-01-14 16:54:55.258 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/favicon.ico']
+2023-01-14 16:54:55.258 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/ws/**']
+2023-01-14 16:54:55.258 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/delifacil/**/dadosPedidoNew/**']
+2023-01-14 16:54:55.258 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/delifacil/image/**']
+2023-01-14 16:54:55.258 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/cliente', POST]
+2023-01-14 16:54:55.258 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/empresa', POST]
+2023-01-14 16:54:55.258 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Ant [pattern='/api/login/signin', POST]
+2023-01-14 16:54:55.258 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto', POST]
+2023-01-14 16:54:55.258 DEBUG 9636 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [hasAnyAuthority('EMPRESA_ADMIN','EMPRESA_USER')] for Ant [pattern='/api/categoriaproduto/*', PUT]
