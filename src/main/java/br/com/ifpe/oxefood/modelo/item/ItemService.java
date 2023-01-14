@@ -8,6 +8,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.ifpe.oxefood.modelo.loja.Loja;
 import br.com.ifpe.oxefood.modelo.loja.LojaService;
 import br.com.ifpe.oxefood.util.entity.GenericService;
 import br.com.ifpe.oxefood.util.exception.EntidadeNaoEncontradaException;
@@ -47,7 +48,9 @@ public class ItemService extends GenericService {
 	}
 	
 	public List<Item> obterItensPorLoja(Long lojaId){
-		return repository.findByLojaIdOrderByNomeAsc(lojaId);
+		
+		Loja loja = lojaService.obterLojaPorID(lojaId); 
+		return repository.findByLojaOrderByNomeAsc(loja);
 	}
 
 	@Transactional
