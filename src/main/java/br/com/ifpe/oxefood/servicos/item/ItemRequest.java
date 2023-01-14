@@ -22,7 +22,7 @@ public class ItemRequest {
 	@Length(max = 100, message = "O Nome deverá ter no máximo {max} caracteres")
 	private String nome;
 	
-	@NotBlank(message = "O Valor é de preenchimento obrigatório")
+	@NotNull(message = "O Valor é de preenchimento obrigatório")
 	private Double valor;
 	
 	private String descricao;
