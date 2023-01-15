@@ -47,6 +47,7 @@ public class ItemService extends GenericService {
 		}
 	}
 	
+	@Transactional
 	public List<Item> obterItensPorLoja(Long lojaId){
 		
 		Loja loja = lojaService.obterLojaPorID(lojaId); 

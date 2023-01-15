@@ -51,7 +51,7 @@ public class ItemController extends GenericController {
 		return itemService.obterItemPorID(id);
 	}
 
-	@ApiOperation(value = "Serviço responsável por obter um item passado id usuario pela URL.")
+	@ApiOperation(value = "Serviço responsável por obter um item passado id da loja pela URL.")
 	@GetMapping("/porloja/{lojaId}")
 	public List<Item> consultarItemsPorLoja(@PathVariable Long lojaId) {
 

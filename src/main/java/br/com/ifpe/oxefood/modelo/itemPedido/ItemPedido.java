@@ -1,4 +1,4 @@
-package br.com.ifpe.oxefood.modelo.item;
+package br.com.ifpe.oxefood.modelo.itemPedido;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,7 +9,7 @@ import org.hibernate.annotations.Where;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import br.com.ifpe.oxefood.modelo.loja.Loja;
+import br.com.ifpe.oxefood.modelo.pedido.Pedido;
 import br.com.ifpe.oxefood.util.entity.EntidadeAuditavel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,21 +23,24 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "Item")
+@Table(name = "ItemPedido")
 @Where(clause = "habilitado = true")
-public class Item extends EntidadeAuditavel {
-	
-	private static final long serialVersionUID = 7605458690359516249L;
+public class ItemPedido extends EntidadeAuditavel{
+
+	private static final long serialVersionUID = -2600297080276180827L;
 
 	@JsonIgnore
 	@ManyToOne
-	private Loja loja;
+	private Pedido pedido;
 	
 	@Column(nullable = false)
 	private String nome;
 	
 	@Column(nullable = false)
 	private Double valor;
+	
+	@Column(nullable = false)
+	private int quantidade;
 	
 	@Column(nullable = false)
 	private String descricao;
@@ -48,11 +51,11 @@ public class Item extends EntidadeAuditavel {
 	@Column(nullable = false)
 	private String porcao;
 	
-	
-	public void updateFrom(Item param) {
+	public void updateFrom(ItemPedido param) {
 		
 		this.setNome(param.getNome());
 		this.setValor(param.getValor());
+		this.setQuantidade(param.getQuantidade());
 		this.setDescricao(param.getDescricao());
 		this.setImagem(param.getImagem());
 		this.setPorcao(param.getPorcao());
