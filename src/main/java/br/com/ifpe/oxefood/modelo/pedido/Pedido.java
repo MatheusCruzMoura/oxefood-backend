@@ -10,6 +10,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.hibernate.annotations.Where;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -60,6 +62,7 @@ public class Pedido extends EntidadeAuditavel{
 	private String situacaoPagamento;
 	
 	@OneToMany(mappedBy = "pedido", orphanRemoval = true, fetch = FetchType.EAGER)
+	@Fetch(value = FetchMode.SUBSELECT)
 	private List<ItemPedido> itens;
 	
 	public void updateFrom(Pedido param) {
