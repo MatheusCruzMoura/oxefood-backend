@@ -50,6 +50,7 @@ public class Loja extends EntidadeAuditavel {
 	private List<Item> itens;
 	
 	@OneToMany(mappedBy = "loja", orphanRemoval = true, fetch = FetchType.EAGER)
+	@Fetch(value = FetchMode.SUBSELECT)
 	private List<Pedido> pedidos;
 
 	public void updateFrom(Loja param) {

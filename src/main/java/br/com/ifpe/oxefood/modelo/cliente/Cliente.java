@@ -10,6 +10,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.hibernate.annotations.Where;
 
 import br.com.ifpe.oxefood.modelo.acesso.Usuario;
@@ -50,6 +52,7 @@ public class Cliente extends EntidadeAuditavel {
 	private String perfilUrl;
 	
 	@OneToMany(mappedBy = "cliente", orphanRemoval = true, fetch = FetchType.EAGER)
+	@Fetch(value = FetchMode.SUBSELECT)
 	private List<Pedido> pedidos;
 
 	public void updateFrom(Cliente param) {
