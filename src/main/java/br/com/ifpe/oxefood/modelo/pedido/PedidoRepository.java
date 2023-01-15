@@ -10,7 +10,7 @@ import br.com.ifpe.oxefood.modelo.loja.Loja;
 
 public interface PedidoRepository  extends JpaRepository<Pedido, Long>, JpaSpecificationExecutor<Pedido>{
 	
-	List<Pedido> findByLojaOrderByNomeAsc(Loja loja);
+	List<Pedido> findByLojaOrderByDataAsc(Loja loja);
 	
 	List<Pedido> findByClienteOrderByDataAsc(Cliente cliente);
 }

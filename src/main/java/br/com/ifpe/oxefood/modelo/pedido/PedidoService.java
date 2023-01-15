@@ -61,7 +61,7 @@ public class PedidoService extends GenericService{
 	public List<Pedido> obterPedidosPorLoja(Long lojaId){
 		
 		Loja loja = lojaService.obterLojaPorID(lojaId); 
-		return repository.findByLojaOrderByNomeAsc(loja);
+		return repository.findByLojaOrderByDataAsc(loja);
 	}
 	
 	@Transactional
