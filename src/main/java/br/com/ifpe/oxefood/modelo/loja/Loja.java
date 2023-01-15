@@ -8,9 +8,12 @@ import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.hibernate.annotations.Where;
 
 import br.com.ifpe.oxefood.modelo.item.Item;
+import br.com.ifpe.oxefood.modelo.pedido.Pedido;
 import br.com.ifpe.oxefood.util.entity.EntidadeAuditavel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -43,7 +46,11 @@ public class Loja extends EntidadeAuditavel {
 	private double valorFrete;
 	
 	@OneToMany(mappedBy = "loja", orphanRemoval = true, fetch = FetchType.EAGER)
+	@Fetch(value = FetchMode.SUBSELECT)
 	private List<Item> itens;
+	
+	@OneToMany(mappedBy = "loja", orphanRemoval = true, fetch = FetchType.EAGER)
+	private List<Pedido> pedidos;
 
 	public void updateFrom(Loja param) {
 
