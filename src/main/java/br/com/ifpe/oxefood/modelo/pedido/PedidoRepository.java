@@ -12,5 +12,5 @@ public interface PedidoRepository  extends JpaRepository<Pedido, Long>, JpaSpeci
 	
 	List<Pedido> findByLojaOrderByNomeAsc(Loja loja);
 	
-	List<Pedido> findByClienteOrderByNomeAsc(Cliente cliente);
+	List<Pedido> findByClienteOrderByDataAsc(Cliente cliente);
 }

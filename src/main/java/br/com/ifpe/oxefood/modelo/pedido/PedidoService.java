@@ -6,15 +6,15 @@ import java.util.Optional;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import br.com.ifpe.oxefood.modelo.cliente.Cliente;
 import br.com.ifpe.oxefood.modelo.cliente.ClienteService;
-import br.com.ifpe.oxefood.modelo.item.Item;
 import br.com.ifpe.oxefood.modelo.loja.Loja;
 import br.com.ifpe.oxefood.modelo.loja.LojaService;
 import br.com.ifpe.oxefood.util.entity.GenericService;
 import br.com.ifpe.oxefood.util.exception.EntidadeNaoEncontradaException;
-
+@Service
 public class PedidoService extends GenericService{
 	
 	@Autowired
@@ -68,7 +68,7 @@ public class PedidoService extends GenericService{
 	public List<Pedido> obterPedidosPorCliente(Long usuarioId){
 		
 		Cliente cliente = clienteService.consultarPorUsuarioId(usuarioId); 
-		return repository.findByClienteOrderByNomeAsc(cliente);
+		return repository.findByClienteOrderByDataAsc(cliente);
 	}
 
 	@Transactional
