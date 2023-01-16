@@ -28,10 +28,6 @@ public class Endereco extends EntidadeAuditavel {
 
 	private static final long serialVersionUID = 8648241655458475570L;
 
-	@ManyToOne
-	@JoinColumn(nullable = false)
-	private Usuario usuario;
-
 	@Column
 	private String cep;
 

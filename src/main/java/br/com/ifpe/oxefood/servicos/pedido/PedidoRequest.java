@@ -19,9 +19,6 @@ public class PedidoRequest {
 	
 	@NotBlank(message = "O valorTotal é de preenchimento obrigatório")
 	private Double valorTotal;
-	
-	@NotBlank(message = "O enderecoEntrega é de preenchimento obrigatório")
-	private Endereco enderecoEntrega;
 
 	private String observacao;
 	
@@ -33,7 +30,6 @@ public class PedidoRequest {
 		return Pedido.builder()
 				.data(LocalDate.now())
 				.valorTotal(valorTotal)
-				.enderecoEntrega(enderecoEntrega)
 				.observacao(observacao)
 				.situacaoPagamento(situacaoPagamento)
 				.build();

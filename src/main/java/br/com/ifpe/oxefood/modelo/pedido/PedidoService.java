@@ -35,6 +35,7 @@ public class PedidoService extends GenericService{
 		Cliente cliente = clienteService.consultarPorUsuarioId(usuarioId);
 		pedido.setCliente(cliente);
 		
+		pedido.setEnderecoEntrega(cliente.getEndereco());
 		
 		super.preencherCamposAuditoria(pedido);
 		Pedido pedidoSalvo = repository.save(pedido);
