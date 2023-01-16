@@ -55,6 +55,7 @@ public class Pedido extends EntidadeAuditavel{
 	
 	@Column(nullable = false)
 	private Endereco enderecoEntrega;
+	
 	@Column
 	private String observacao;
 	
