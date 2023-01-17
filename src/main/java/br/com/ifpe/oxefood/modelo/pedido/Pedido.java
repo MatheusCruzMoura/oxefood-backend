@@ -17,7 +17,6 @@ import org.hibernate.annotations.Where;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import br.com.ifpe.oxefood.modelo.cliente.Cliente;
-import br.com.ifpe.oxefood.modelo.endereco.Endereco;
 import br.com.ifpe.oxefood.modelo.itemPedido.ItemPedido;
 import br.com.ifpe.oxefood.modelo.loja.Loja;
 import br.com.ifpe.oxefood.util.entity.EntidadeAuditavel;
@@ -54,7 +53,7 @@ public class Pedido extends EntidadeAuditavel{
 	private Double valorTotal;
 	
 	@Column(nullable = false)
-	private Endereco enderecoEntrega;
+	private String enderecoEntrega;
 	
 	@Column
 	private String observacao;
@@ -65,6 +64,8 @@ public class Pedido extends EntidadeAuditavel{
 	@OneToMany(mappedBy = "pedido", orphanRemoval = true, fetch = FetchType.EAGER)
 	@Fetch(value = FetchMode.SUBSELECT)
 	private List<ItemPedido> itens;
+	
+	
 	
 	public void updateFrom(Pedido param) {
 		this.setData(param.getData());

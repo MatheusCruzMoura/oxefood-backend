@@ -23,6 +23,7 @@ public class ItemPedidoService extends GenericService{
 	@Transactional
 	public ItemPedido save(ItemPedido itemPedido, Long pedidoId) {
 		
+		itemPedido.setId(pedidoId);
 		super.preencherCamposAuditoria(itemPedido);
 		ItemPedido itemPedidoSalvo = repository.save(itemPedido);
 

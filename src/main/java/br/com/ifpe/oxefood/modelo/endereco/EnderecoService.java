@@ -5,6 +5,9 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.ifpe.oxefood.modelo.cliente.Cliente;
+import br.com.ifpe.oxefood.modelo.cliente.ClienteRepository;
+import br.com.ifpe.oxefood.modelo.cliente.ClienteService;
 import br.com.ifpe.oxefood.util.entity.GenericService;
 
 @Service
@@ -12,6 +15,12 @@ public class EnderecoService extends GenericService {
 
 	@Autowired
 	private EnderecoRepository repository;
+	
+	@Autowired
+	private ClienteService clienteService;
+	
+	@Autowired
+	private ClienteRepository clienteRepository;
 
 	@Transactional
 	public Endereco obterEnderecoPorID(Long id) {
@@ -28,6 +37,11 @@ public class EnderecoService extends GenericService {
 		super.preencherCamposAuditoria(endereco);
 
 		repository.save(endereco);
+		
+//		Cliente cliente = clienteService.obterClientePorID(id);
+//		cliente.setEndereco(enderecoAlterado);
+//		
+//		clienteService.update(id, cliente);
 	}
 
 	@Transactional

@@ -8,6 +8,7 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Fetch;
@@ -56,8 +57,26 @@ public class Cliente extends EntidadeAuditavel {
 	@Fetch(value = FetchMode.SUBSELECT)
 	private List<Pedido> pedidos;
 	
-	@JoinColumn(nullable = false)
-	private Endereco endereco;
+	@Column
+	private String cep;
+
+	@Column
+	private String logradouro;
+
+	@Column
+	private String numero;
+
+	@Column
+	private String bairro;
+
+	@Column
+	private String cidade;
+
+	@Column
+	private String uf;
+
+	@Column
+	private String complemento;
 	
 	public void updateFrom(Cliente param) {
 

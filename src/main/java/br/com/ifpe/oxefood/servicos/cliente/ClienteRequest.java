@@ -10,6 +10,7 @@ import org.hibernate.validator.constraints.Length;
 
 import br.com.ifpe.oxefood.modelo.acesso.Usuario;
 import br.com.ifpe.oxefood.modelo.cliente.Cliente;
+import br.com.ifpe.oxefood.modelo.endereco.Endereco;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -62,6 +63,5 @@ public class ClienteRequest {
 			.roles(Arrays.asList(Usuario.ROLE_CLIENTE))
 			.build();
 	    }
-
 
 }

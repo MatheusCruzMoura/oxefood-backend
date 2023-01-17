@@ -1,11 +1,12 @@
 package br.com.ifpe.oxefood.servicos.pedido;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-import br.com.ifpe.oxefood.modelo.endereco.Endereco;
+import br.com.ifpe.oxefood.modelo.itemPedido.ItemPedido;
 import br.com.ifpe.oxefood.modelo.pedido.Pedido;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -26,6 +27,9 @@ public class PedidoRequest {
 	@NotBlank(message = "A situacaoPagamento é de preenchimento obrigatório")
 	private String situacaoPagamento;
 	
+	@NotNull
+	private List<ItemPedido> items;
+	
 	public Pedido buildPedido() {
 		
 		return Pedido.builder()
@@ -33,6 +37,8 @@ public class PedidoRequest {
 				.valorTotal(valorTotal)
 				.observacao(observacao)
 				.situacaoPagamento(situacaoPagamento)
+				.itens(items)
 				.build();
 	}
+	
 }
